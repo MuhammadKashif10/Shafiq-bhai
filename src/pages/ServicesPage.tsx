@@ -66,14 +66,14 @@ const ServicesPage = () => (
         </ScrollReveal>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { flag: "🇵🇰", country: "Pakistan", city: "Lahore & more" },
-            { flag: "🇦🇪", country: "UAE", city: "Dubai & Abu Dhabi" },
-            { flag: "🇬🇧", country: "United Kingdom", city: "London & more" },
-            { flag: "🇺🇸", country: "USA", city: "Nationwide" },
+            { code: "PK", country: "Pakistan", city: "Lahore & more" },
+            { code: "AE", country: "UAE", city: "Dubai & Abu Dhabi" },
+            { code: "GB", country: "United Kingdom", city: "London & more" },
+            { code: "US", country: "USA", city: "Nationwide" },
           ].map((c, i) => (
             <ScrollReveal key={c.country} delay={i * 0.1}>
               <div className="bg-white/5 rounded-xl p-6 border border-white/10 card-hover">
-                <div className="text-4xl mb-3">{c.flag}</div>
+                <div className="text-4xl mb-3 text-white font-bold">{c.code}</div>
                 <h3 className="text-white font-semibold">{c.country}</h3>
                 <p className="text-white/50 text-sm">{c.city}</p>
               </div>
