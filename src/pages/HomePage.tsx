@@ -5,11 +5,11 @@ import { BookOpen, Globe, Monitor, GraduationCap, Users, Award, Star, CheckCircl
 import ScrollReveal from "@/components/ScrollReveal";
 import AnimatedCounter from "@/components/AnimatedCounter";
 
-const typewriterWords = ["O-Level Tutors", "A-Level Tutors", "Online Tutors", "Matric Tutors"];
+const typewriterWords = ["IGCSE/O level Tutors", "AS/A Level Tutors", "Online Tutors", "Matric Tutors"];
 
 const services = [
-  { icon: BookOpen, title: "O-Level Tutoring", desc: "Cambridge O-Level preparation with expert tutors for all subjects." },
-  { icon: GraduationCap, title: "A-Level Tutoring", desc: "Top-tier A-Level coaching to secure your university admission." },
+  { icon: BookOpen, title: "IGCSE/O level Tutoring", desc: "Cambridge IGCSE/O level preparation with expert tutors for all subjects." },
+  { icon: GraduationCap, title: "AS/A Level Tutoring", desc: "Top-tier AS/A Level coaching to secure your university admission." },
   { icon: Award, title: "Matric / FSc", desc: "Local board exam preparation with proven result-driven methods." },
   { icon: Monitor, title: "Online Tutoring", desc: "Learn from anywhere with our interactive online sessions." },
   { icon: Globe, title: "International Tutoring", desc: "Serving students in Dubai, UK, USA with tailored curricula." },
@@ -34,9 +34,9 @@ const features = [
 ];
 
 const testimonials = [
-  { name: "Sarah K.", role: "A-Level Student", quote: "SNK Tutoring transformed my grades. I went from a C to an A* in just 6 months!", rating: 5 },
+  { name: "Sarah K.", role: "AS/A Level Student", quote: "SNK Tutoring transformed my grades. I went from a C to an A* in just 6 months!", rating: 5 },
   { name: "Ahmed R.", role: "Parent", quote: "The best tutoring service in Lahore. Professional, reliable, and effective.", rating: 5 },
-  { name: "Maria L.", role: "O-Level Student", quote: "My tutor explained complex concepts so clearly. Highly recommend!", rating: 5 },
+  { name: "Maria L.", role: "IGCSE/O level Student", quote: "My tutor explained complex concepts so clearly. Highly recommend!", rating: 5 },
   { name: "James W.", role: "Parent, UK", quote: "Finding quality Pakistani curriculum tutors in London was impossible until SNK.", rating: 5 },
 ];
 
@@ -104,7 +104,7 @@ const HomePage = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-lg md:text-xl text-white/70 mb-4 max-w-2xl"
             >
-              Expert home tutoring in Lahore, Dubai, UK & USA — O-Level, A-Level, Matric, FSc & Online
+              Expert home tutoring in Lahore, Dubai, UK & USA — IGCSE/O level, AS/A Level, Matric, FSc & Online
             </motion.p>
 
             <motion.div

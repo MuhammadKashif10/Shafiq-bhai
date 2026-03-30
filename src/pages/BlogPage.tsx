@@ -3,15 +3,15 @@ import PageBanner from "@/components/PageBanner";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Search, Calendar, Tag } from "lucide-react";
 
-const categories = ["All", "O-Level", "A-Level", "Study Tips", "News"];
+const categories = ["All", "IGCSE/O level", "AS/A Level", "Study Tips", "News"];
 
 const posts = [
-  { id: 1, title: "Top 10 Tips to Ace Your O-Level Exams", excerpt: "Discover proven strategies that top O-Level students use to score A* grades consistently.", category: "O-Level", date: "Jan 15, 2025" },
-  { id: 2, title: "A-Level vs O-Level: Key Differences Explained", excerpt: "Understanding the academic leap from O-Level to A-Level and how to prepare for it.", category: "A-Level", date: "Jan 10, 2025" },
+  { id: 1, title: "Top 10 Tips to Ace Your IGCSE/O level Exams", excerpt: "Discover proven strategies that top IGCSE/O level students use to score A* grades consistently.", category: "IGCSE/O level", date: "Jan 15, 2025" },
+  { id: 2, title: "AS/A Level vs IGCSE/O level: Key Differences Explained", excerpt: "Understanding the academic leap from IGCSE/O level to AS/A Level and how to prepare for it.", category: "AS/A Level", date: "Jan 10, 2025" },
   { id: 3, title: "How Online Tutoring is Changing Education", excerpt: "The rise of online tutoring and why it's becoming the preferred choice for modern families.", category: "News", date: "Jan 5, 2025" },
   { id: 4, title: "5 Study Habits of Successful Students", excerpt: "Research-backed study techniques that can dramatically improve your academic performance.", category: "Study Tips", date: "Dec 28, 2024" },
   { id: 5, title: "Choosing the Right Tutor for Your Child", excerpt: "A comprehensive guide to finding the perfect tutor match for your child's learning style.", category: "Study Tips", date: "Dec 20, 2024" },
-  { id: 6, title: "A-Level Mathematics: Common Mistakes to Avoid", excerpt: "Expert tutors share the most common errors A-Level maths students make and how to fix them.", category: "A-Level", date: "Dec 15, 2024" },
+  { id: 6, title: "AS/A Level Mathematics: Common Mistakes to Avoid", excerpt: "Expert tutors share the most common errors AS/A Level maths students make and how to fix them.", category: "AS/A Level", date: "Dec 15, 2024" },
 ];
 
 const BlogPage = () => {

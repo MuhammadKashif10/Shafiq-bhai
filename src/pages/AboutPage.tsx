@@ -10,7 +10,7 @@ const values = [
 ];
 
 const team = [
-  { name: "Prof. Ahmad Khan", qual: "M.Phil Mathematics", subject: "O/A-Level Maths" },
+  { name: "Prof. Ahmad Khan", qual: "M.Phil Mathematics", subject: "IGCSE/O & AS/A Level Maths" },
   { name: "Ms. Fatima Ali", qual: "MSc Physics", subject: "Physics & Chemistry" },
   { name: "Mr. James Wilson", qual: "PGCE, Cambridge", subject: "English Literature" },
   { name: "Dr. Sarah Malik", qual: "PhD Education", subject: "Biology & Sciences" },

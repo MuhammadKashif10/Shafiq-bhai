@@ -89,7 +89,7 @@ const ContactPage = () => {
                   <label className="block text-sm font-medium text-foreground mb-1">Grade / Level</label>
                   <select value={form.level} onChange={e => setForm(f => ({ ...f, level: e.target.value }))} className={inputClass("level")}>
                     <option value="">Select level</option>
-                    {["O-Level", "A-Level", "Matric", "FSc", "Other"].map(l => <option key={l} value={l}>{l}</option>)}
+                    {["IGCSE/O level", "AS/A Level", "Matric", "FSc", "Other"].map(l => <option key={l} value={l}>{l}</option>)}
                   </select>
                 </div>
                 <div>
