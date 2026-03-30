@@ -12,7 +12,7 @@ const Footer = () => (
           <div className="flex gap-4 mt-5">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/60 transition-colors text-sm">f</a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/60 transition-colors text-sm">in</a>
-            <a href="https://wa.me/923406506040" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/60 transition-colors text-sm">wa</a>
+            <a href="https://wa.me/923262100890" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/60 hover:text-white hover:border-white/60 transition-colors text-sm">wa</a>
           </div>
         </div>
 
@@ -40,7 +40,7 @@ const Footer = () => (
         <div>
           <h4 className="font-semibold text-lg mb-4">Contact Us</h4>
           <ul className="space-y-3 text-sm text-white/60">
-            <li className="flex items-center gap-2"><Phone size={14} /><a href="tel:+923406506040" className="hover:text-white transition-colors">+92 340 6506040</a></li>
+            <li className="flex items-center gap-2"><Phone size={14} /><a href="tel:+923262100890" className="hover:text-white transition-colors">03262100890</a></li>
             <li className="flex items-center gap-2"><Mail size={14} /><a href="mailto:info@snktutoring.com" className="hover:text-white transition-colors">info@snktutoring.com</a></li>
             <li className="flex items-start gap-2"><MapPin size={14} className="mt-0.5" /><span>Lahore, Pakistan</span></li>
           </ul>

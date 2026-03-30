@@ -45,7 +45,7 @@ const ServicesPage = () => (
                 <h3 className="text-lg font-semibold text-foreground mb-2">{s.title}</h3>
                 <p className="text-muted-foreground text-sm mb-3 flex-grow">{s.desc}</p>
                 <p className="text-xs text-muted-foreground mb-4"><span className="font-semibold">Subjects:</span> {s.subjects}</p>
-                <a href="https://wa.me/923406506040" target="_blank" rel="noopener noreferrer" className="btn-gold text-center text-sm py-2">
+                <a href="https://wa.me/923262100890" target="_blank" rel="noopener noreferrer" className="btn-gold text-center text-sm py-2">
                   Get Started
                 </a>
               </div>

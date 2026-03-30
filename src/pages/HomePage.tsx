@@ -2,6 +2,11 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { BookOpen, Globe, Monitor, GraduationCap, Users, Award, Star, CheckCircle, ArrowRight, Phone, MessageCircle, Home as HomeIcon, UserCheck, ShieldCheck, Heart } from "lucide-react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import ScrollReveal from "@/components/ScrollReveal";
 import AnimatedCounter from "@/components/AnimatedCounter";
 
@@ -40,6 +45,34 @@ const testimonials = [
   { name: "James W.", role: "Parent, UK", quote: "Finding quality Pakistani curriculum tutors in London was impossible until SNK.", rating: 5 },
 ];
 
+const heroSlides = [
+  {
+    heading: "Empowering Future Leaders",
+    sub: "We nurture young minds to reach their full academic potential",
+    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1920&q=80",
+  },
+  {
+    heading: "Expert Tutors, Real Results",
+    sub: "Our qualified tutors bring out the best in every student",
+    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1920&q=80",
+  },
+  {
+    heading: "Learning Beyond Boundaries",
+    sub: "From Lahore to Dubai, UK & USA — we teach everywhere",
+    image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1920&q=80",
+  },
+  {
+    heading: "Personalized Education for Every Child",
+    sub: "One-on-one tutoring tailored to your child's unique needs",
+    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1920&q=80",
+  },
+  {
+    heading: "Your Success is Our Mission",
+    sub: "Hundreds of students have transformed their grades with SNK Tutoring",
+    image: "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=1920&q=80",
+  },
+];
+
 const HomePage = () => {
   const [wordIndex, setWordIndex] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -57,7 +90,14 @@ const HomePage = () => {
   return (
     <div>
       {/* Hero */}
-      <section className="min-h-screen gradient-navy relative overflow-hidden flex items-center">
+      <section
+        className="min-h-screen relative overflow-hidden flex items-center bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1758270704021-361c165d68fd?auto=format&fit=crop&w=1920&q=80")' }}
+      >
+        <div
+          className="absolute inset-0"
+          style={{ backgroundColor: "rgba(9, 21, 51, 0.7)" }}
+        />
         {/* Particles */}
         <div className="absolute inset-0">
           {[...Array(15)].map((_, i) => (
@@ -123,7 +163,7 @@ const HomePage = () => {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="flex flex-wrap gap-4"
             >
-              <a href="https://wa.me/923406506040" target="_blank" rel="noopener noreferrer" className="btn-gold animate-shine text-base">
+              <a href="https://wa.me/923262100890" target="_blank" rel="noopener noreferrer" className="btn-gold animate-shine text-base">
                 Hire a Tutor
               </a>
             </motion.div>
@@ -148,6 +188,39 @@ const HomePage = () => {
             </div>
           ))}
         </div>
+      </section>
+
+      {/* Hero Slider */}
+      <section className="w-full">
+        <Swiper
+          modules={[Autoplay, Navigation, Pagination]}
+          slidesPerView={1}
+          loop
+          navigation
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 4500, disableOnInteraction: false }}
+          className="w-full"
+        >
+          {heroSlides.map((slide) => (
+            <SwiperSlide key={slide.heading}>
+              <div
+                className="relative min-h-[60vh] md:min-h-[70vh] w-full bg-cover bg-center bg-no-repeat flex items-center justify-center text-center px-6"
+                style={{ backgroundImage: `url("${slide.image}")` }}
+              >
+                <div className="absolute inset-0 bg-[#091533]/70" />
+                <div className="relative z-10 max-w-4xl">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-white mb-4">
+                    {slide.heading}
+                  </h2>
+                  <div className="w-20 h-1 mx-auto mb-5 bg-[hsl(40_92%_47%)] rounded-full" />
+                  <p className="text-base sm:text-lg md:text-xl text-white/90">
+                    {slide.sub}
+                  </p>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </section>
 
       {/* Services Preview */}
@@ -291,10 +364,10 @@ const HomePage = () => {
             </h2>
             <p className="text-white/60 mb-8 max-w-lg mx-auto">Get started today with Pakistan's most trusted tutoring service</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="tel:+923406506040" className="btn-gold flex items-center gap-2">
-                <Phone size={18} /> Call Now: +92 340 6506040
+              <a href="tel:+923262100890" className="btn-gold flex items-center gap-2">
+                <Phone size={18} /> Call Now: 03262100890
               </a>
-              <a href="https://wa.me/923406506040" target="_blank" rel="noopener noreferrer" className="btn-outline-light flex items-center gap-2">
+              <a href="https://wa.me/923262100890" target="_blank" rel="noopener noreferrer" className="btn-outline-light flex items-center gap-2">
                 <MessageCircle size={18} /> WhatsApp Us
               </a>
             </div>

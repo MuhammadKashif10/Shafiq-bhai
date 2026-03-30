@@ -5,8 +5,8 @@ import { Phone, MessageCircle, Mail, MapPin } from "lucide-react";
 import { toast } from "sonner";
 
 const contactCards = [
-  { icon: Phone, title: "Phone", info: "+92 340 6506040", href: "tel:+923406506040", color: "gold-text" },
-  { icon: MessageCircle, title: "WhatsApp", info: "+92 340 6506040", href: "https://wa.me/923406506040", color: "gold-text" },
+  { icon: Phone, title: "Phone", info: "03262100890", href: "tel:+923262100890", color: "gold-text" },
+  { icon: MessageCircle, title: "WhatsApp", info: "03262100890", href: "https://wa.me/923262100890", color: "gold-text" },
   { icon: Mail, title: "Email", info: "info@snktutoring.com", href: "mailto:info@snktutoring.com", color: "gold-text" },
   { icon: MapPin, title: "Address", info: "Lahore, Pakistan", href: "#map", color: "gold-text" },
 ];

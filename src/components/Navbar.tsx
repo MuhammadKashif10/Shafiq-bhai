@@ -50,7 +50,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden lg:flex items-center gap-3">
-          <a href="tel:+923406506040" className="btn-gold flex items-center gap-2 text-sm py-2 px-4 animate-shine">
+          <a href="tel:+923262100890" className="btn-gold flex items-center gap-2 text-sm py-2 px-4 animate-shine">
             <Phone size={16} />
             Call Now
           </a>
@@ -84,7 +84,7 @@ const Navbar = () => {
                   {link.label}
                 </Link>
               ))}
-              <a href="tel:+923406506040" className="btn-gold text-center text-sm py-2 mt-2">
+              <a href="tel:+923262100890" className="btn-gold text-center text-sm py-2 mt-2">
                 <Phone size={16} className="inline mr-2" />Call Now
               </a>
             </div>
